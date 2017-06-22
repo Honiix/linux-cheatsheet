@@ -2,7 +2,7 @@
 
 ## Disk utilities
 
-- Display a list of disks and their partitions:
+### Display a list of disks and their partitions:
 
 ```
 lsblk
@@ -10,48 +10,50 @@ lsblk -f         // with filesystem
 lsblk -o +MODEL  // display manufaturer name
 ```
 
-----
+### List monted partitions:
 
-- List monted partitions:
 
-`mount`
+```
+mount
+```
 
-----
+### Drives monted using Nautilus (GUI) location:
 
-- Drives monted using Nautilus (GUI) location:
 
-`/run/user/<username>/gvfs`
+```
+/run/user/<username>/gvfs
+```
 
-----
+### How to mount an image done with dd or ddrescue: 
 
-- How to mount an image done with dd or ddrescue: 
+```
+mount -o loop monimage.img monpointdemontage
+```
 
-`mount -o loop monimage.img monpointdemontage`
+### Look at kernel logs:
 
-----
+```
+dmesg
+```
 
-- Look at kernel logs:
+### List first level of folder from current location:
 
-`dmesg`
+```
+du -hxd 1 .
+```
 
-----
+### Calculate size of a folder
 
-- List first level of folder from current location:
+```
+du -hs <dossier>
+```
 
-`du -hxd 1 .`
+### List folders size interactively (Fedora, CentOs, RedHat):
 
-----
-
-- Calculate size of a folder
-
-`du -hs <dossier>`
-
-----
-
-- List folders size interactively:
-
-`sudo [yum | dnf] install ncdu` <- Fedora, CentOS, RedHat
-`ncdu .`
+```
+sudo [yum | dnf] install ncdu
+ncdu .
+```
 
 
 ## Benchmarks
