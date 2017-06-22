@@ -4,11 +4,11 @@
 
 - Display a list of disks and their partitions:
 
-`lsblk`
-
-`lsblk -f`        // with filesystem
-
-`lsblk -o +MODEL` // display manufaturer name
+```
+lsblk
+lsblk -f         // with filesystem
+lsblk -o +MODEL  // display manufaturer name
+```
 
 ----
 
