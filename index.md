@@ -10,14 +10,14 @@ lsblk -f         // with filesystem
 lsblk -o +MODEL  // display manufaturer name
 ```
 
-### List monted partitions:
+### List mounted partitions:
 
 
 ```
 mount
 ```
 
-### Drives monted using Nautilus (GUI) location:
+### Drives mounted using Nautilus (GUI) location:
 
 
 ```
