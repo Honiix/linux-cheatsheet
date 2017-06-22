@@ -59,3 +59,11 @@ ncdu .
 ## Benchmarks
 
 Todo
+
+```python
+def to_check_highlight():
+    print('Hello World')
+    
+if __name__ == '__main__':
+    to_check_highlight()
+```
